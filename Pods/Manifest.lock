@@ -1,0 +1,15 @@
+PODS:
+  - BNRDynamicTypeManager (0.1.0):
+    - BNRDynamicTypeManager/Controls
+    - BNRDynamicTypeManager/Core
+  - BNRDynamicTypeManager/Controls (0.1.0):
+    - BNRDynamicTypeManager/Core
+  - BNRDynamicTypeManager/Core (0.1.0)
+
+DEPENDENCIES:
+  - BNRDynamicTypeManager (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  BNRDynamicTypeManager: 1b534ad4a4b189c625d0e55e288918f86e628b13
+
+COCOAPODS: 0.29.0
