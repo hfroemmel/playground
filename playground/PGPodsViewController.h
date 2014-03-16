@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PGPodsViewController : UIViewController
+@interface PGPodsViewController : UITableViewController
 
 @end

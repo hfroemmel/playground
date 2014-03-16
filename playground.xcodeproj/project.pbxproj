@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32AE58FF9F9E4092B28395CE /* libPods-playground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBE74AF1CF74CBFB22287A5 /* libPods-playground.a */; };
+		B158B39618D5ED1100AC0786 /* PGTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B158B39518D5ED1100AC0786 /* PGTextField.m */; };
+		B17E923618D2851600E1F09F /* PGMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E923518D2851600E1F09F /* PGMenuViewController.m */; };
+		B17E923A18D285AD00E1F09F /* PGLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E923918D285AD00E1F09F /* PGLoginViewController.m */; };
+		B17E924218D2A0EC00E1F09F /* PGRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E924118D2A0EC00E1F09F /* PGRegisterViewController.m */; };
+		B17E924618D3295700E1F09F /* PGPodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E924518D3295700E1F09F /* PGPodsViewController.m */; };
+		B17E924918D33A9E00E1F09F /* PGPodsWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E924818D33A9E00E1F09F /* PGPodsWebService.m */; };
+		B17E924C18D33BD200E1F09F /* PGPodsImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E924B18D33BD200E1F09F /* PGPodsImporter.m */; };
+		B17E925018D33E1500E1F09F /* PGPersistentStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E924F18D33E1500E1F09F /* PGPersistentStack.m */; };
+		B17E925A18D3411400E1F09F /* PGModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B17E925818D3411400E1F09F /* PGModel.xcdatamodeld */; };
+		B17E925D18D3417D00E1F09F /* ModelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E925C18D3417D00E1F09F /* ModelObject.m */; };
+		B17E926018D34C2300E1F09F /* Pod.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E925F18D34C2300E1F09F /* Pod.m */; };
+		B17E926718D3525500E1F09F /* FetchedResultsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E926618D3525500E1F09F /* FetchedResultsControllerDataSource.m */; };
+		B17E926A18D35CAD00E1F09F /* PGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E926918D35CAD00E1F09F /* PGConstants.m */; };
+		B17E926D18D370E400E1F09F /* PGPodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B17E926C18D370E400E1F09F /* PGPodDetailViewController.m */; };
 		B1C8904E18D271FD00B2AB07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C8904D18D271FD00B2AB07 /* Foundation.framework */; };
 		B1C8905018D271FD00B2AB07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C8904F18D271FD00B2AB07 /* CoreGraphics.framework */; };
 		B1C8905218D271FD00B2AB07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C8905118D271FD00B2AB07 /* UIKit.framework */; };
@@ -21,6 +36,7 @@
 		B1C8906F18D271FD00B2AB07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C8905118D271FD00B2AB07 /* UIKit.framework */; };
 		B1C8907718D271FD00B2AB07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1C8907518D271FD00B2AB07 /* InfoPlist.strings */; };
 		B1C8907918D271FD00B2AB07 /* playgroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1C8907818D271FD00B2AB07 /* playgroundTests.m */; };
+		B1C8908318D2729D00B2AB07 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B1C8908218D2729D00B2AB07 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B56B483C41949A1852222EF /* Pods-playground.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playground.xcconfig"; path = "Pods/Pods-playground.xcconfig"; sourceTree = "<group>"; };
+		B158B39418D5ED1100AC0786 /* PGTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGTextField.h; sourceTree = "<group>"; };
+		B158B39518D5ED1100AC0786 /* PGTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGTextField.m; sourceTree = "<group>"; };
+		B17E923418D2851600E1F09F /* PGMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMenuViewController.h; sourceTree = "<group>"; };
+		B17E923518D2851600E1F09F /* PGMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGMenuViewController.m; sourceTree = "<group>"; };
+		B17E923818D285AD00E1F09F /* PGLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGLoginViewController.h; sourceTree = "<group>"; };
+		B17E923918D285AD00E1F09F /* PGLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGLoginViewController.m; sourceTree = "<group>"; };
+		B17E924018D2A0EC00E1F09F /* PGRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGRegisterViewController.h; sourceTree = "<group>"; };
+		B17E924118D2A0EC00E1F09F /* PGRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGRegisterViewController.m; sourceTree = "<group>"; };
+		B17E924418D3295700E1F09F /* PGPodsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPodsViewController.h; sourceTree = "<group>"; };
+		B17E924518D3295700E1F09F /* PGPodsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPodsViewController.m; sourceTree = "<group>"; };
+		B17E924718D33A9E00E1F09F /* PGPodsWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPodsWebService.h; sourceTree = "<group>"; };
+		B17E924818D33A9E00E1F09F /* PGPodsWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPodsWebService.m; sourceTree = "<group>"; };
+		B17E924A18D33BD200E1F09F /* PGPodsImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPodsImporter.h; sourceTree = "<group>"; };
+		B17E924B18D33BD200E1F09F /* PGPodsImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPodsImporter.m; sourceTree = "<group>"; };
+		B17E924E18D33E1500E1F09F /* PGPersistentStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPersistentStack.h; sourceTree = "<group>"; };
+		B17E924F18D33E1500E1F09F /* PGPersistentStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPersistentStack.m; sourceTree = "<group>"; };
+		B17E925918D3411400E1F09F /* PGModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PGModel.xcdatamodel; sourceTree = "<group>"; };
+		B17E925B18D3417D00E1F09F /* ModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelObject.h; sourceTree = "<group>"; };
+		B17E925C18D3417D00E1F09F /* ModelObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelObject.m; sourceTree = "<group>"; };
+		B17E925E18D34C2300E1F09F /* Pod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pod.h; sourceTree = "<group>"; };
+		B17E925F18D34C2300E1F09F /* Pod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pod.m; sourceTree = "<group>"; };
+		B17E926518D3525500E1F09F /* FetchedResultsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchedResultsControllerDataSource.h; sourceTree = "<group>"; };
+		B17E926618D3525500E1F09F /* FetchedResultsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchedResultsControllerDataSource.m; sourceTree = "<group>"; };
+		B17E926818D35CAD00E1F09F /* PGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGConstants.h; sourceTree = "<group>"; };
+		B17E926918D35CAD00E1F09F /* PGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGConstants.m; sourceTree = "<group>"; };
+		B17E926B18D370E400E1F09F /* PGPodDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGPodDetailViewController.h; sourceTree = "<group>"; };
+		B17E926C18D370E400E1F09F /* PGPodDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGPodDetailViewController.m; sourceTree = "<group>"; };
 		B1C8904A18D271FD00B2AB07 /* playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C8904D18D271FD00B2AB07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B1C8904F18D271FD00B2AB07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +97,8 @@
 		B1C8907418D271FD00B2AB07 /* playgroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "playgroundTests-Info.plist"; sourceTree = "<group>"; };
 		B1C8907618D271FD00B2AB07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B1C8907818D271FD00B2AB07 /* playgroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = playgroundTests.m; sourceTree = "<group>"; };
+		B1C8908218D2729D00B2AB07 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		DDBE74AF1CF74CBFB22287A5 /* libPods-playground.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-playground.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +109,7 @@
 				B1C8905018D271FD00B2AB07 /* CoreGraphics.framework in Frameworks */,
 				B1C8905218D271FD00B2AB07 /* UIKit.framework in Frameworks */,
 				B1C8904E18D271FD00B2AB07 /* Foundation.framework in Frameworks */,
+				32AE58FF9F9E4092B28395CE /* libPods-playground.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +126,114 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B158B39318D5ECF600AC0786 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B158B39418D5ED1100AC0786 /* PGTextField.h */,
+				B158B39518D5ED1100AC0786 /* PGTextField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B17E923718D2858900E1F09F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B1C8906218D271FD00B2AB07 /* PGViewController.h */,
+				B1C8906318D271FD00B2AB07 /* PGViewController.m */,
+				B17E924318D3294200E1F09F /* Pods */,
+				B17E923F18D2A0D300E1F09F /* Register */,
+				B17E925518D340C100E1F09F /* Login */,
+				B17E923B18D2865000E1F09F /* Menu */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		B17E923B18D2865000E1F09F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				B17E923418D2851600E1F09F /* PGMenuViewController.h */,
+				B17E923518D2851600E1F09F /* PGMenuViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		B17E923F18D2A0D300E1F09F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B17E924018D2A0EC00E1F09F /* PGRegisterViewController.h */,
+				B17E924118D2A0EC00E1F09F /* PGRegisterViewController.m */,
+			);
+			name = Register;
+			sourceTree = "<group>";
+		};
+		B17E924318D3294200E1F09F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B17E924418D3295700E1F09F /* PGPodsViewController.h */,
+				B17E924518D3295700E1F09F /* PGPodsViewController.m */,
+				B17E926B18D370E400E1F09F /* PGPodDetailViewController.h */,
+				B17E926C18D370E400E1F09F /* PGPodDetailViewController.m */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B17E924D18D33DE600E1F09F /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				B17E924E18D33E1500E1F09F /* PGPersistentStack.h */,
+				B17E924F18D33E1500E1F09F /* PGPersistentStack.m */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		B17E925118D33EBE00E1F09F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B17E925818D3411400E1F09F /* PGModel.xcdatamodeld */,
+				B17E925B18D3417D00E1F09F /* ModelObject.h */,
+				B17E925C18D3417D00E1F09F /* ModelObject.m */,
+				B17E925E18D34C2300E1F09F /* Pod.h */,
+				B17E925F18D34C2300E1F09F /* Pod.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B17E925518D340C100E1F09F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B17E923818D285AD00E1F09F /* PGLoginViewController.h */,
+				B17E923918D285AD00E1F09F /* PGLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		B17E925618D340E700E1F09F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B17E924718D33A9E00E1F09F /* PGPodsWebService.h */,
+				B17E924818D33A9E00E1F09F /* PGPodsWebService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		B17E925718D340F000E1F09F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B17E924A18D33BD200E1F09F /* PGPodsImporter.h */,
+				B17E924B18D33BD200E1F09F /* PGPodsImporter.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		B17E926418D3524100E1F09F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B17E926518D3525500E1F09F /* FetchedResultsControllerDataSource.h */,
+				B17E926618D3525500E1F09F /* FetchedResultsControllerDataSource.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
 		B1C8904118D271FD00B2AB07 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +241,8 @@
 				B1C8907218D271FD00B2AB07 /* playgroundTests */,
 				B1C8904C18D271FD00B2AB07 /* Frameworks */,
 				B1C8904B18D271FD00B2AB07 /* Products */,
+				B1C8908218D2729D00B2AB07 /* Podfile */,
+				2B56B483C41949A1852222EF /* Pods-playground.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +262,7 @@
 				B1C8904F18D271FD00B2AB07 /* CoreGraphics.framework */,
 				B1C8905118D271FD00B2AB07 /* UIKit.framework */,
 				B1C8906C18D271FD00B2AB07 /* XCTest.framework */,
+				DDBE74AF1CF74CBFB22287A5 /* libPods-playground.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +270,18 @@
 		B1C8905318D271FD00B2AB07 /* playground */ = {
 			isa = PBXGroup;
 			children = (
+				B158B39318D5ECF600AC0786 /* Views */,
+				B17E926418D3524100E1F09F /* DataSource */,
+				B17E925718D340F000E1F09F /* Util */,
+				B17E925618D340E700E1F09F /* Services */,
+				B17E925118D33EBE00E1F09F /* Model */,
+				B17E924D18D33DE600E1F09F /* Persistence */,
+				B17E923718D2858900E1F09F /* ViewController */,
 				B1C8905C18D271FD00B2AB07 /* PGAppDelegate.h */,
 				B1C8905D18D271FD00B2AB07 /* PGAppDelegate.m */,
+				B17E926818D35CAD00E1F09F /* PGConstants.h */,
+				B17E926918D35CAD00E1F09F /* PGConstants.m */,
 				B1C8905F18D271FD00B2AB07 /* Main.storyboard */,
-				B1C8906218D271FD00B2AB07 /* PGViewController.h */,
-				B1C8906318D271FD00B2AB07 /* PGViewController.m */,
 				B1C8906518D271FD00B2AB07 /* Images.xcassets */,
 				B1C8905418D271FD00B2AB07 /* Supporting Files */,
 			);
@@ -159,9 +324,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1C8907C18D271FD00B2AB07 /* Build configuration list for PBXNativeTarget "playground" */;
 			buildPhases = (
+				BC12C219D609414D9913F4DB /* Check Pods Manifest.lock */,
 				B1C8904618D271FD00B2AB07 /* Sources */,
 				B1C8904718D271FD00B2AB07 /* Frameworks */,
 				B1C8904818D271FD00B2AB07 /* Resources */,
+				F6111C697FF44C9088961BD7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +398,7 @@
 			files = (
 				B1C8906618D271FD00B2AB07 /* Images.xcassets in Resources */,
 				B1C8905818D271FD00B2AB07 /* InfoPlist.strings in Resources */,
+				B1C8908318D2729D00B2AB07 /* Podfile in Resources */,
 				B1C8906118D271FD00B2AB07 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,14 +413,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC12C219D609414D9913F4DB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F6111C697FF44C9088961BD7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-playground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1C8904618D271FD00B2AB07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B17E923618D2851600E1F09F /* PGMenuViewController.m in Sources */,
+				B17E924918D33A9E00E1F09F /* PGPodsWebService.m in Sources */,
+				B17E926D18D370E400E1F09F /* PGPodDetailViewController.m in Sources */,
+				B17E926718D3525500E1F09F /* FetchedResultsControllerDataSource.m in Sources */,
+				B17E924218D2A0EC00E1F09F /* PGRegisterViewController.m in Sources */,
+				B17E924C18D33BD200E1F09F /* PGPodsImporter.m in Sources */,
+				B17E925D18D3417D00E1F09F /* ModelObject.m in Sources */,
 				B1C8905A18D271FD00B2AB07 /* main.m in Sources */,
 				B1C8906418D271FD00B2AB07 /* PGViewController.m in Sources */,
+				B17E923A18D285AD00E1F09F /* PGLoginViewController.m in Sources */,
+				B17E925A18D3411400E1F09F /* PGModel.xcdatamodeld in Sources */,
+				B158B39618D5ED1100AC0786 /* PGTextField.m in Sources */,
+				B17E924618D3295700E1F09F /* PGPodsViewController.m in Sources */,
 				B1C8905E18D271FD00B2AB07 /* PGAppDelegate.m in Sources */,
+				B17E925018D33E1500E1F09F /* PGPersistentStack.m in Sources */,
+				B17E926018D34C2300E1F09F /* Pod.m in Sources */,
+				B17E926A18D35CAD00E1F09F /* PGConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +591,7 @@
 		};
 		B1C8907D18D271FD00B2AB07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B56B483C41949A1852222EF /* Pods-playground.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -389,6 +605,7 @@
 		};
 		B1C8907E18D271FD00B2AB07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B56B483C41949A1852222EF /* Pods-playground.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -461,6 +678,7 @@
 				B1C8907E18D271FD00B2AB07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1C8907F18D271FD00B2AB07 /* Build configuration list for PBXNativeTarget "playgroundTests" */ = {
 			isa = XCConfigurationList;
@@ -469,8 +687,22 @@
 				B1C8908118D271FD00B2AB07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B17E925818D3411400E1F09F /* PGModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B17E925918D3411400E1F09F /* PGModel.xcdatamodel */,
+			);
+			currentVersion = B17E925918D3411400E1F09F /* PGModel.xcdatamodel */;
+			path = PGModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B1C8904218D271FD00B2AB07 /* Project object */;
 }

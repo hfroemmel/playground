@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class PGPodsWebService;
+
 @interface PGPodsImporter : NSObject
+
+- (id)initWithContext:(NSManagedObjectContext *)context
+           webservice:(PGPodsWebService *)webservice;
+- (void)import;
 
 @end

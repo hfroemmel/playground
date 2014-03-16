@@ -6,7 +6,6 @@
 
 @implementation ModelObject
 
-
 + (id)entityName
 {
     return NSStringFromClass(self);

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1C0CA2D8196B4E87BBEF33BB"
+               BlueprintIdentifier = "A430AA548EAB4185964381A0"
                BuildableName = "libPods-playground-BNRDynamicTypeManager.a"
                BlueprintName = "Pods-playground-BNRDynamicTypeManager"
                ReferencedContainer = "container:Pods.xcodeproj">

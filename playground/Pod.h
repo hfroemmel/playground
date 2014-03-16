@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "ModelObject.h"
 
-
-@interface Pod : NSManagedObject
+@interface Pod : ModelObject
 
 @property (nonatomic, retain) id authors;
 @property (nonatomic, retain) NSString * homepage;
@@ -18,5 +18,8 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * source;
 @property (nonatomic, retain) NSString * version;
+
+- (void)loadFromDictionary:(NSDictionary *)dictionary;
++ (Pod *)findOrCreatePodWithIdentifier:(NSString *)identifier inContext:(NSManagedObjectContext *)context;
 
 @end

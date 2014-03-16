@@ -6,10 +6,9 @@
 //
 
 
-#import "PersistentStack.h"
+#import "PGPersistentStack.h"
 
-
-@interface PersistentStack ()
+@interface PGPersistentStack ()
 
 @property (nonatomic,readwrite) NSManagedObjectContext* managedObjectContext;
 @property (nonatomic,readwrite) NSManagedObjectContext* backgroundManagedObjectContext;
@@ -18,7 +17,7 @@
 
 @end
 
-@implementation PersistentStack
+@implementation PGPersistentStack
 
 - (id)initWithStoreURL:(NSURL*)storeURL modelURL:(NSURL*)modelURL
 {
@@ -35,22 +34,22 @@
 {
     self.managedObjectContext = [self setupManagedObjectContextWithConcurrencyType:NSMainQueueConcurrencyType];
     self.managedObjectContext.undoManager = [[NSUndoManager alloc] init];
-
+    
     self.backgroundManagedObjectContext = [self setupManagedObjectContextWithConcurrencyType:NSPrivateQueueConcurrencyType];
     self.backgroundManagedObjectContext.undoManager = nil;
-
-
+    
+    
     [[NSNotificationCenter defaultCenter]
-            addObserverForName:NSManagedObjectContextDidSaveNotification
-                        object:nil
-                         queue:nil
-                    usingBlock:^(NSNotification* note) {
-        NSManagedObjectContext *moc = self.managedObjectContext;
-        if (note.object != moc) {
-            [moc performBlock:^(){
-                [moc mergeChangesFromContextDidSaveNotification:note];
-            }];
-        }
+     addObserverForName:NSManagedObjectContextDidSaveNotification
+     object:nil
+     queue:nil
+     usingBlock:^(NSNotification* note) {
+         NSManagedObjectContext *moc = self.managedObjectContext;
+         if (note.object != moc) {
+             [moc performBlock:^(){
+                 [moc mergeChangesFromContextDidSaveNotification:note];
+             }];
+         }
      }];
 }
 
@@ -58,7 +57,7 @@
 {
     NSManagedObjectContext *managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:concurrencyType];
     managedObjectContext.persistentStoreCoordinator =
-            [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
+    [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
     NSError* error;
     [managedObjectContext.persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                                   configuration:nil

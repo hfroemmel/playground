@@ -1,0 +1,1 @@
+PODS_PLAYGROUND_VIEWDECK_OTHER_LDFLAGS = -framework QuartzCore

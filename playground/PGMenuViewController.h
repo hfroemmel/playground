@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PGMenuViewController : UIViewController
+@interface PGMenuViewController : UITableViewController
 
 @end

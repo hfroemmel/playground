@@ -7,32 +7,44 @@
 //
 
 #import "PGMenuViewController.h"
+#import "PGPodsViewController.h"
 
-@interface PGMenuViewController ()
+#import "IIViewDeckController.h"
+
+@interface PGMenuViewController () <UITableViewDelegate, IIViewDeckControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *menuTable;
+@property (strong, nonatomic) NSMutableArray *navigationItems;
 
 @end
 
 @implementation PGMenuViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    
+    self.viewDeckController.delegate = self;
+    self.menuTable.delegate = self;
+    
+    self.navigationItems = NSMutableArray.new;
+    [self.navigationItems addObject:@"loginController"];
+    [self.navigationItems addObject:@"podsController"];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if (indexPath.row < self.navigationItems.count) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        UINavigationController *navigationController = UINavigationController.new;
+        UIViewController *viewController = (PGPodsViewController *)[storyboard instantiateViewControllerWithIdentifier:self.navigationItems[indexPath.row]];
+        
+        [navigationController setViewControllers:@[viewController]];
+        
+        [self.viewDeckController setCenterController: navigationController];
+        [self.viewDeckController toggleLeftViewAnimated:YES];
+    }
 }
 
 @end

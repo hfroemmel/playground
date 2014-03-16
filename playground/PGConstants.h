@@ -10,4 +10,6 @@
 
 @interface PGConstants : NSObject
 
+#define POD_SERVER_URL @"http://localhost:4567"
+
 @end

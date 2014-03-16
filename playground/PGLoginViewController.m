@@ -7,32 +7,58 @@
 //
 
 #import "PGLoginViewController.h"
+#import "IIViewDeckController.h"
 
-@interface PGLoginViewController ()
+@interface PGLoginViewController () <IIViewDeckControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIButton *menuButton;
+@property (weak, nonatomic) IBOutlet UIButton *helpButton;
+
+@property (weak, nonatomic) IBOutlet UITextField *userTextField;
+@property (weak, nonatomic) IBOutlet UITextField *pwdTextField;
+@property (weak, nonatomic) IBOutlet UIButton    *forgotPwdButton;
 
 @end
 
 @implementation PGLoginViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)viewWillAppear:(BOOL)animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    [super viewWillAppear:animated];
+
+    self.viewDeckController.delegate = self;
+    [self.userTextField becomeFirstResponder];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self resignAllTextFieldResponders];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewDeckController:(IIViewDeckController *)viewDeckController
+           didOpenViewSide:(IIViewDeckSide)viewDeckSide
+                  animated:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self resignAllTextFieldResponders];
 }
 
+-(void)viewDeckController:(IIViewDeckController *)viewDeckController
+didShowCenterViewFromSide:(IIViewDeckSide)viewDeckSide
+                 animated:(BOOL)animated
+{
+    self.viewDeckController.delegate = self;
+    [self.userTextField becomeFirstResponder];
+}
+
+- (void)resignAllTextFieldResponders
+{
+    [self.userTextField resignFirstResponder];
+    [self.pwdTextField resignFirstResponder];
+}
+
+- (IBAction)didTouchMenuButton:(id)sender
+{
+    [self.viewDeckController toggleLeftViewAnimated:YES];
+}
 @end

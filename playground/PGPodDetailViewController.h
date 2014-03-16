@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Pod.h"
 
 @interface PGPodDetailViewController : UIViewController
+
+@property (strong, nonatomic) Pod *pod;
 
 @end

@@ -7,12 +7,24 @@
 //
 
 #import "PGAppDelegate.h"
+#import "IIViewDeckController.h"
 
 @implementation PGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main"
+                                                         bundle:[NSBundle mainBundle]];
+    
+    UINavigationController* centerController = (UINavigationController *)self.window.rootViewController;
+    UIViewController* leftController         = [storyboard instantiateViewControllerWithIdentifier:@"leftController"];
+    UIViewController* rightController        = nil;
+    
+    IIViewDeckController* viewDeckController = [[IIViewDeckController alloc] initWithCenterViewController:centerController
+                                                                                       leftViewController:leftController
+                                                                                      rightViewController:rightController];
+    self.window.rootViewController = viewDeckController;
+    
     return YES;
 }
 							

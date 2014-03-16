@@ -10,4 +10,6 @@
 
 @interface PGPodsWebService : NSObject
 
+- (void)fetchAllPods:(void (^)(NSArray *pods))callback;
+
 @end

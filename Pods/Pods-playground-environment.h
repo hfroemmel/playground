@@ -24,3 +24,9 @@
 #define COCOAPODS_VERSION_MINOR_BNRDynamicTypeManager_Core 1
 #define COCOAPODS_VERSION_PATCH_BNRDynamicTypeManager_Core 0
 
+// ViewDeck
+#define COCOAPODS_POD_AVAILABLE_ViewDeck
+#define COCOAPODS_VERSION_MAJOR_ViewDeck 2
+#define COCOAPODS_VERSION_MINOR_ViewDeck 3
+#define COCOAPODS_VERSION_PATCH_ViewDeck 1
+
